@@ -1,6 +1,6 @@
 
 import { RouterProvider } from "react-router-dom";
-import router from "./Router/Router";
+import router from "./Router/router.jsx";
 import UserProvider from "./Context/UserContext";
 
 export default function App() {
