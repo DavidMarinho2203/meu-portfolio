@@ -1,0 +1,275 @@
+[
+    {
+        "eu": "David Beckham",
+        "faculdade": "Análise e Desenvolvimento de Sistema(ADS) na UEPB",
+        "redeSocial": [
+            {
+                "title": "Discord",
+                "icone": "ri-discord-fill",
+                "url": "https://discord.gg/A23KvvkYuK"
+            },
+            {
+                "title": "Github",
+                "icone": "ri-github-fill",
+                "url": "https://github.com/DavidMarinho2203"
+            },
+            {
+                "title": "Linkedin",
+                "icone": "ri-linkedin-fill",
+                "url": "https://www.linkedin.com/in/david-beckham-278644227/"
+            }
+        ],
+        "tecnologias": [
+            {
+                "title": "JavaScript",
+                "cores": "#EFD81D",
+                "icone": "ri-javascript-fill"
+            },
+            {
+                "title": "Html",
+                "cores": "#DD4B25",
+                "icone": "ri-html5-fill"
+            },
+            {
+                "title": "Css",
+                "cores": "#254BDD",
+                "icone": "ri-css3-fill"
+            },
+            {
+                "title": "Scss",
+                "cores": "#CC669B",
+                "icone": "ri-code-fill"
+            },
+            {
+                "title": "React",
+                "cores": "#5ED3F3",
+                "icone": "ri-reactjs-line"
+            },
+            {
+                "title": "Git/Github",
+                "cores": "#E84E31",
+                "icone": "ri-github-fill"
+            },
+            {
+                "title": "Npm",
+                "cores": "#C53635",
+                "icone": "ri-npmjs-fill"
+            },
+            {
+                "title": "Windows",
+                "cores": "#254BDD",
+                "icone": "ri-windows-fill"
+            }
+        ],
+        "projetos": [
+            {
+                "nome": "Lista de Produtos com Carrinho",
+                "nomePrincipal":"Carrinho",
+                "github": "https://github.com/DavidMarinho2203/lista-de-produtos-com-carrinho",
+                "foto": "/assets/images/lista-de-produtos-com-carrinho-weld.vercel.app_.png",
+                "site": "https://lista-de-produtos-com-carrinho-weld.vercel.app/",
+                "tecnologias": [
+                    {
+                        "key": "Carrinho-tec-React",
+                        "icone": "ri-reactjs-line",
+                        "nome": "React"
+                    },
+                    {
+                        "key": "Carrinho-tec-JavaScript",
+                        "icone": "ri-javascript-fill",
+                        "nome": "JavaScript"
+                    },
+                    {
+                        "key": "Carrinho-tec-Html",
+                        "icone": "ri-html5-fill",
+                        "nome": "Html"
+                    },
+                    {
+                        "key": "Carrinho-tec-Css",
+                        "icone": "ri-css3-fill",
+                        "nome": "Css"
+                    },
+                    {
+                        "key": "Carrinho-tec-Sass",
+                        "icone": "ri-code-fill",
+                        "nome": "Sass"
+                    }
+                ]
+            },
+            {
+                "nome": "Calculadora de Gorjetas",
+                "nomePrincipal":"Gorjetas",
+                "github": "https://github.com/DavidMarinho2203/calculadora-de-gorjetas",
+                "foto": "/assets/images/calculadora-de-gorjetas-peach.vercel.app_.png",
+                "site": "https://calculadora-de-gorjetas-peach.vercel.app/",
+                "tecnologias": [
+                    {
+                        "key": "Gorjetas-tec-JavaScript",
+                        "icone": "ri-javascript-fill",
+                        "nome": "JavaScript"
+                    },
+                    {
+                        "key": "Gorjetas-tec-Html",
+                        "icone": "ri-html5-fill",
+                        "nome": "Html"
+                    },
+                    {
+                        "key": "Gorjetas-tec-Css",
+                        "icone": "ri-css3-fill",
+                        "nome": "Css"
+                    },
+                    {
+                        "key": "Gorjetas-tec-Sass",
+                        "icone": "ri-code-fill",
+                        "nome": "Sass"
+                    }
+                ]
+            },
+            {
+                "nome": "Calculadora de Idade",
+                "nomePrincipal":"Idade",
+                "github": "https://github.com/DavidMarinho2203/calculadora-de-idade",
+                "foto": "/assets/images/calculadora-de-idade-peach.vercel.app_.png",
+                "site": "https://calculadora-de-idade-peach.vercel.app/",
+                "tecnologias": [
+                    {
+                        "key": "Idade-tec-JavaScript",
+                        "icone": "ri-javascript-fill",
+                        "nome": "JavaScript"
+                    },
+                    {
+                        "key": "Idade-tec-Html",
+                        "icone": "ri-html5-fill",
+                        "nome": "Html"
+                    },
+                    {
+                        "key": "Idade-tec-Css",
+                        "icone": "ri-css3-fill",
+                        "nome": "Css"
+                    },
+                    {
+                        "key": "Idade-tec-Sass",
+                        "icone": "ri-code-fill",
+                        "nome": "Sass"
+                    }
+                ]
+            },
+            {
+                "nome": "Gerador de conselhos",
+                "nomePrincipal":"Conselhos",
+                "github": "https://github.com/DavidMarinho2203/gerador-de-conselhos",
+                "foto": "/assets/images/gerador-de-conselhos-six.vercel.app_.png",
+                "site": "https://gerador-de-conselhos-six.vercel.app/",
+                "tecnologias": [
+                    {
+                        "key": "Conselhos-tec-JavaScript",
+                        "icone": "ri-javascript-fill",
+                        "nome": "JavaScript"
+                    },
+                    {
+                        "key": "Conselhos-tec-Html",
+                        "icone": "ri-html5-fill",
+                        "nome": "Html"
+                    },
+                    {
+                        "key": "Conselhos-tec-Css",
+                        "icone": "ri-css3-fill",
+                        "nome": "Css"
+                    },
+                    {
+                        "key": "Conselhos-tec-Sass",
+                        "icone": "ri-code-fill",
+                        "nome": "Sass"
+                    }
+                ]
+            },
+            {
+                "nome": "Inscrição com mensagem de sucesso",
+                "nomePrincipal":"Formulario",
+                "github": "https://github.com/DavidMarinho2203/formulario-de-inscricao-com-msg-sucesso",
+                "foto": "/assets/images/formulario-de-inscricao-com-msg-sucesso.vercel.app_.png",
+                "site": "https://formulario-de-inscricao-com-msg-sucesso.vercel.app/",
+                "tecnologias":  [
+                    {
+                        "key": "Msg-tec-JavaScript",
+                        "icone": "ri-javascript-fill",
+                        "nome": "JavaScript"
+                    },
+                    {
+                        "key": "Msg-tec-Html",
+                        "icone": "ri-html5-fill",
+                        "nome": "Html"
+                    },
+                    {
+                        "key": "Msg-tec-Css",
+                        "icone": "ri-css3-fill",
+                        "nome": "Css"
+                    },
+                    {
+                        "key": "Msg-tec-Sass",
+                        "icone": "ri-code-fill",
+                        "nome": "Sass"
+                    }
+                ]
+            },
+            {
+                "nome": "Página de destino de agência",
+                "nomePrincipal":"Agencia",
+                "github": "https://github.com/DavidMarinho2203/pagina-de-destino-da-agencia",
+                "foto": "/assets/images/pagina-de-destino-da-agencia.vercel.app_.png",
+                "site": "https://pagina-de-destino-da-agencia.vercel.app/",
+                "tecnologias":  [
+                    {
+                        "key": "Agencia-tec-JavaScript",
+                        "icone": "ri-javascript-fill",
+                        "nome": "JavaScript"
+                    },
+                    {
+                        "key": "Agencia-tec-Html",
+                        "icone": "ri-html5-fill",
+                        "nome": "Html"
+                    },
+                    {
+                        "key": "Agencia-tec-Css",
+                        "icone": "ri-css3-fill",
+                        "nome": "Css"
+                    },
+                    {
+                        "key": "Agencia-tec-Sass",
+                        "icone": "ri-code-fill",
+                        "nome": "Sass"
+                    }
+                ]
+            },
+            {
+                "nome": "Grade de comentários",
+                "nomePrincipal":"Comentarios",
+                "github": "https://github.com/DavidMarinho2203/",
+                "foto": "/assets/images/secao-de-grade-de-depoimentos.vercel.app_.png",
+                "site": "https://secao-de-grade-de-depoimentos.vercel.app/",
+                "tecnologias":  [
+                    {
+                        "key": "Comentarios-tec-JavaScript",
+                        "icone": "ri-javascript-fill",
+                        "nome": "JavaScript"
+                    },
+                    {
+                        "key": "Comentarios-tec-Html",
+                        "icone": "ri-html5-fill",
+                        "nome": "Html"
+                    },
+                    {
+                        "key": "Comentarios-tec-Css",
+                        "icone": "ri-css3-fill",
+                        "nome": "Css"
+                    },
+                    {
+                        "key": "Comentarios-tec-Sass",
+                        "icone": "ri-code-fill",
+                        "nome": "Sass"
+                    }
+                ]
+            }
+        ]
+    }
+]
