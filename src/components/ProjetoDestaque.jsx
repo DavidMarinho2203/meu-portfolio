@@ -21,11 +21,11 @@ export default function ProjetoDestaque() {
                 <img className="relative w-full max-w-2xl mx-auto md:p-2 bg-cinza md:rounded-xl" src={projetoDestaque.foto} alt={projetoDestaque.nome} />
                 {verProjeto[0] == projetoDestaque.nome
                     ? (
-                        <div className="absolute w-full h-full top-0 bg-cinza50 rounded-xl flex flex-col justify-center items-center gap-1">
-                            <p className=" textshadomPretaBranco font-bold text-2xl ">{projetoDestaque.nomePrincipal}</p>
+                        <div className="absolute top-0 flex flex-col items-center justify-center w-full h-full gap-1 bg-cinza50 rounded-xl">
+                            <p className="text-2xl font-bold  textshadomPretaBranco">{projetoDestaque.nomePrincipal}</p>
                             <ul className="flex gap-3">
-                                <a href={projetoDestaque.site} target="_blank" className="w-fit text-3xl px-2 py-1 rounded-2xl hover:bg-roxo hover:text-branco ri-pages-line" title="Site"></a>
-                                <a href={projetoDestaque.github} target="_blank" className="w-fit text-3xl px-2 py-1 rounded-2xl hover:bg-roxo hover:text-branco ri-code-s-slash-fill" title="Código"></a>
+                                <a href={projetoDestaque.site} target="_blank" className="px-2 py-1 text-3xl w-fit rounded-2xl hover:bg-roxo hover:text-branco ri-pages-line" title="Site"></a>
+                                <a href={projetoDestaque.github} target="_blank" className="px-2 py-1 text-3xl w-fit rounded-2xl hover:bg-roxo hover:text-branco ri-code-s-slash-fill" title="Código"></a>
                             </ul>
                         </div>
                     )
