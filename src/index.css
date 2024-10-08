@@ -1,68 +1,47 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Importando os icones */
+
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#sociaisHome a:nth-child(1){
+  border-top-right-radius: 0.75rem;
+}
+
+#sociaisHome a:nth-child(2){
+  border-end-end-radius: 0.75rem;
+}
+
+#sociaisFooter a:nth-child(2) img{
+  height: 1.75rem;
 }
 
 
-#sociais a:nth-child(1){
-    border-radius: 0 0.75rem 0 0  ;
+::-webkit-scrollbar {
+  width: 12px; 
 }
 
-#sociais a:nth-child(3){
-    border-radius: 0 0 0.75rem  0  ;
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
 }
 
-#tecnologias li:nth-child(1):hover {
-    background-color: hsl(53, 87%, 53%);
+::-webkit-scrollbar-thumb {
+  background: hsl(259, 79%, 59%); 
 }
 
-#tecnologias li:nth-child(2):hover {
-    background-color: hsl(12, 73%, 51%);
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(259, 79%, 50%);
 }
 
-#tecnologias li:nth-child(3):hover {
-    background-color: hsl(228, 73%, 51%);
+/* Para Firefox */
+.scrollbar {
+  scrollbar-width: thin; 
+  scrollbar-color: hsl(259, 79%, 59%) #f1f1f1; 
 }
 
-#tecnologias li:nth-child(4):hover {
-    background-color: hsl(329, 50%, 60%);
-}
-
-#tecnologias li:nth-child(5):hover {
-    background-color: hsl(193, 86%, 66%);
-}
-
-#tecnologias li:nth-child(6):hover {
-    background-color: hsl(10, 80%, 55%);
-}
-
-#tecnologias li:nth-child(7):hover {
-    background-color: hsl(0, 58%, 49%);
-}
-
-#tecnologias li:nth-child(8):hover {
-    background-color: hsl(206, 100%, 40%);
-}
-
-.ri-sparkling-fill{
-    color: hsl(53, 87%, 53%);
-    text-shadow: 2px 2px 0 #000;
-}
-
-.ri-tools-fill{
-    color: hsl(259, 79%, 59%);
-}
-.textshadomPretaBranco{
-    text-shadow: 3px 2px 1px #fff;
-}
-
-.ri-rocket-2-fill{
-    color: hsl(0, 58%, 49%);
-}

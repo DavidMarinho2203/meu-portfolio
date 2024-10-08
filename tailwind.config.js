@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx,html}"],
   safelist: [
     "bg-fundoPrincipal",
     "bg-Carrinho",
@@ -14,7 +14,7 @@ export default {
   theme: {
     extend: {
       height: {
-        "custom-height": "calc(100vh - 5rem)",
+        "custom-height": "calc(100vh - 10vh)",
       },
       width: {
         "custom01-width": "70vh"
@@ -32,10 +32,9 @@ export default {
       transitionDuration: {
         "250": "0.25s"
       }
-    }
-    ,
+    },
     colors: {
-      "transparente": "transparent ",
+      "transparente": "transparent",
       "roxo": "hsl(259, 79%, 59%)",
       "branco": "hsl(0, 0%, 100%)",
       "preto": "hsl(0, 0%, 0%)",
@@ -49,7 +48,8 @@ export default {
       "tecGit": "hsl(10, 80%, 55%)",
       "tecNpm": "hsl(0, 58%, 49%)",
       "tecWindows": "hsl(206, 100%, 40%)",
-      "red": "red"
+      "red": "red",
+      "green": "green",
     },
     screens: {
       "sm": "600px",
