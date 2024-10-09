@@ -16,7 +16,12 @@ export default function useUser(): useUserType {
     setShowProject((state) => (name === state ? "" : name));
   };
 
-  
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // para uma rolagem suave
+    });
+  }
 
   return {
     dados,
@@ -25,5 +30,6 @@ export default function useUser(): useUserType {
     screenWidth,
     showProject,
     showSpecificProject,
+    scrollToTop,
   };
 }

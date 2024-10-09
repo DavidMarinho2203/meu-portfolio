@@ -39,6 +39,7 @@ export interface dados {
     screenWidth: number;
     showProject: string;
     showSpecificProject: (name: string) => void;
+    scrollToTop: () => void;
   }
   
   export interface seeProjectType {

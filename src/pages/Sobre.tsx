@@ -4,7 +4,7 @@ import { useContext } from "react"
 import { UserContext } from "../Context/UserContext"
 
 const Sobre = () => {
-    const { dados } = useContext(UserContext)
+    const { dados, scrollToTop} = useContext(UserContext)
 
     return (
         <main className="flex flex-col h-full gap-5 py-5 ">
@@ -20,7 +20,7 @@ const Sobre = () => {
 
                 <section className="flex flex-col gap-5 text-center md:text-start">
                     <h3 className="text-xl font-bold select-none md:text-2xl">Me conhecer!</h3>
-                    <p className="text-sm md:text-base">Sou um desenvolvedor <span className="font-bold no-underline">Frontend</span> especializado em criar experiências digitais envolventes e eficientes. Focado em transformar ideias em interfaces de usuário intuitivas, trabalho para garantir que cada site ou aplicação contribua diretamente para o sucesso dos produtos e das marcas que represento. Explore alguns dos meus projetos na seção "<Link className="font-bold no-underline text-roxo" to={"/Projetos"}>Projetos</Link>" e veja como posso ajudar a trazer suas ideias para a web.</p>
+                    <p className="text-sm md:text-base">Sou um desenvolvedor <span className="font-bold no-underline">Frontend</span> especializado em criar experiências digitais envolventes e eficientes. Focado em transformar ideias em interfaces de usuário intuitivas, trabalho para garantir que cada site ou aplicação contribua diretamente para o sucesso dos produtos e das marcas que represento. Explore alguns dos meus projetos na seção "<Link className="font-bold no-underline text-roxo" to={"/Projetos"} onClick={() => scrollToTop()}>Projetos</Link>" e veja como posso ajudar a trazer suas ideias para a web.</p>
                     <p className="text-sm md:text-base">Nesse momento estou fazendo <span className="font-bold no-underline">{dados.faculdade}</span> no qual estou dominando as linguagens de <span className="font-bold no-underline">Python</span> e <span className="font-bold no-underline">Java</span>, inclusive estou aberto a <span className="font-bold no-underline">estágio não remunerado</span>
                     </p>
 

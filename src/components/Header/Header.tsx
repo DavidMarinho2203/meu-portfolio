@@ -39,7 +39,7 @@ export default function Header() {
             {!openMenu && screenWidth < 600 &&
                 (
                     <header className="flex items-center justify-between px-4 py-4 border-solid shadow-xl bg-neutral-50">
-                        <p className="text-lg font-semibold select-none h-fit text-roxo">{dados.eu}</p>
+                        <p className="text-lg font-semibold select-none h-fit ">{dados.eu}</p>
                         <img className={`h-10  cursor-pointer`} src="/assets/icon/open-menu-svgrepo-com.svg" alt="menu close"  onClick={() => setOpenMenu(!openMenu)} />
                     </header>
                 )
