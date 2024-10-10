@@ -10,32 +10,7 @@ export default function Header() {
 
     return (
         <>
-            {screenWidth >= 600 &&
-                (
-                    <header className="flex items-center justify-between p-4 h-[10vh] shadow-xl  bg-neutral-50 ">
-                        <p className="text-lg font-semibold select-none">{dados.eu}</p>
-                        <ul className="flex flex-row items-center justify-center h-full gap-5 ">
-                            <Link to="/" className={(location.pathname == "/" 
-                                ? "text-roxo cursor-not-allowed pointer-events-none " 
-                                : `text-preto hover:text-roxo`)
-                                + "text-lg select-none font-semibold"}>Home</Link>
-                            <Link to="/Sobre" className={(location.pathname == "/Sobre" 
-                                ? "text-roxo cursor-not-allowed pointer-events-none " 
-                                : `text-preto hover:text-roxo`)
-                                + "text-lg select-none font-semibold"}>Sobre</Link>
-                            <Link to="/Projetos" className={(location.pathname == "/Projetos" 
-                                ? "text-roxo cursor-not-allowed pointer-events-none " 
-                                : `text-preto hover:text-roxo`)
-                                + "text-lg select-none font-semibold"}>Projetos</Link>
-                            <Link to="/Contato" className={(location.pathname == "/Contato" 
-                                ? "text-roxo cursor-not-allowed pointer-events-none " 
-                                : `text-preto hover:text-roxo`)
-                                + "text-lg select-none font-semibold"}>Contato</Link>
-                        </ul>
-                    </header>
-                )
-            }
-
+            {/* Mobile(MenuClose) */}
             {!openMenu && screenWidth < 600 &&
                 (
                     <header className="flex items-center justify-between px-4 py-4 border-solid shadow-xl bg-neutral-50">
@@ -44,8 +19,8 @@ export default function Header() {
                     </header>
                 )
             }
-
-            {openMenu &&
+            {/* Mobile(MenuOpen)  */}
+            {openMenu && screenWidth < 600 &&
                 (
                     <header className="relative h-screen ">
                         <img 
@@ -76,7 +51,32 @@ export default function Header() {
                 )
             }
 
-
+            {/*  */}
+            {screenWidth >= 600 &&
+                (
+                    <header className="flex items-center justify-between p-4 h-[10vh] shadow-xl  bg-neutral-50 ">
+                        <p className="text-lg font-semibold select-none">{dados.eu}</p>
+                        <ul className="flex flex-row items-center justify-center h-full gap-5 ">
+                            <Link to="/" className={(location.pathname == "/" 
+                                ? "text-roxo cursor-not-allowed pointer-events-none " 
+                                : `text-preto hover:text-roxo`)
+                                + "text-lg select-none font-semibold"}>Home</Link>
+                            <Link to="/Sobre" className={(location.pathname == "/Sobre" 
+                                ? "text-roxo cursor-not-allowed pointer-events-none " 
+                                : `text-preto hover:text-roxo`)
+                                + "text-lg select-none font-semibold"}>Sobre</Link>
+                            <Link to="/Projetos" className={(location.pathname == "/Projetos" 
+                                ? "text-roxo cursor-not-allowed pointer-events-none " 
+                                : `text-preto hover:text-roxo`)
+                                + "text-lg select-none font-semibold"}>Projetos</Link>
+                            <Link to="/Contato" className={(location.pathname == "/Contato" 
+                                ? "text-roxo cursor-not-allowed pointer-events-none " 
+                                : `text-preto hover:text-roxo`)
+                                + "text-lg select-none font-semibold"}>Contato</Link>
+                        </ul>
+                    </header>
+                )
+            }
         </>
     )
 }
