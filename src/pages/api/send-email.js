@@ -7,10 +7,7 @@ export default async function handler(req, res) {
     return res.status(405).send({ error: 'Only POST requests are allowed' });
   }
   
-  const { name, email, telefone, message } = req.body;
-
-  // Verificando se a variável de ambiente está sendo lida corretamente 
-  console.log('EMAIL_USER:', process.env.EMAIL_USER);
+  const { name, email, telefone, message } = req.body;;
 
   const msg = {
     to: process.env.EMAIL_USER,
