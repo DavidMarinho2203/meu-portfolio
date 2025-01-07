@@ -9,6 +9,9 @@ export default async function handler(req, res) {
   
   const { name, email, telefone, message } = req.body;
 
+  // Verificando se a variável de ambiente está sendo lida corretamente 
+  console.log('EMAIL_USER:', process.env.EMAIL_USER);
+
   const msg = {
     to: process.env.EMAIL_USER,
     from: process.env.EMAIL_USER,
