@@ -1,26 +1,25 @@
-# Landing Page - Fotógrafo Profissional
+# Portfolio Pessoal - Fotógrafo Profissional
 
 ## Descrição
 
-Landing page desenvolvida para um **fotógrafo profissional**, utilizando **Next.js**, **Tailwind CSS** e **TypeScript**. O objetivo é criar uma página visualmente atraente e otimizada para **promover serviços fotográficos**, exibir o **portfólio** e fornecer um canal de **contato direto** com os clientes.
+Este é o meu **portfolio pessoal** desenvolvido com **Next.js**, **Tailwind CSS** e **TypeScript**. A landing page tem o objetivo de exibir meus **serviços fotográficos**, meu **portfólio de trabalho** e fornecer um canal de **contato direto** para potenciais clientes.
 
 ## Funcionalidades
 
 - **Portfólio interativo** com galeria de fotos;
-- **Seção de serviços** com informações sobre pacotes e valores;
-- **Formulário de contato** para envio de mensagens;
-- **Links para redes sociais** do fotógrafo;
-- **Design responsivo**, funcionando em dispositivos móveis, tablets e desktops;
-- **SEO otimizado** para melhorar a visibilidade nos motores de busca.
+- **Seção de serviços** detalhando pacotes e valores;
+- **Formulário de contato** para facilitar o envio de mensagens;
+- **Links para redes sociais** para promover meu trabalho;
+- **Design responsivo**, adaptado para dispositivos móveis, tablets e desktops;
+- **SEO otimizado** para melhorar a visibilidade nos motores de busca e facilitar o acesso.
 
 ## Tecnologias Utilizadas
 
-- **Next.js**: Framework React para construção da landing page;
-- **TypeScript**: Tipagem estática para melhorar a segurança e a manutenção do código;
-- **Tailwind CSS**: Framework CSS para design responsivo e estilização;
-- **Font Awesome**: Para ícones de redes sociais;
-- **React**: Biblioteca JavaScript para construção de interfaces interativas;
-- **Vercel**: Plataforma para deploy e hospedagem do Next.js (opcional).
+- **Next.js**: Framework React para construção de páginas otimizadas e com renderização do lado do servidor;
+- **TypeScript**: Utilizado para tipagem estática e melhorar a manutenção do código;
+- **Tailwind CSS**: Framework CSS para design responsivo, permitindo uma estilização rápida e eficiente;
+- **Font Awesome**: Para ícones de redes sociais e elementos visuais;
+- **React**: Para construção de interfaces interativas e componentes reutilizáveis.
 
 ## Como Rodar o Projeto
 
@@ -29,4 +28,4 @@ Landing page desenvolvida para um **fotógrafo profissional**, utilizando **Next
 Clone o repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/landing-page-fotografo.git
+git clone https://github.com/seu-usuario/portfolio-fotografo.git
