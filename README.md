@@ -1,25 +1,27 @@
-# Portfolio Pessoal - Fotógrafo Profissional
+# Meu Portfólio Pessoal
 
 ## Descrição
 
-Este é o meu **portfolio pessoal** desenvolvido com **Next.js**, **Tailwind CSS** e **TypeScript**. A landing page tem o objetivo de exibir meus **serviços fotográficos**, meu **portfólio de trabalho** e fornecer um canal de **contato direto** para potenciais clientes.
+Bem-vindo ao meu **portfólio pessoal**, desenvolvido com **Next.js**, **Tailwind CSS** e **TypeScript**. Este site é uma vitrine do meu trabalho como desenvolvedor, onde apresento meus projetos, habilidades, experiências e formas de contato.
+
+O objetivo deste portfólio é demonstrar minhas competências e habilidades em desenvolvimento web, utilizando as tecnologias mais modernas e populares do mercado.
 
 ## Funcionalidades
 
-- **Portfólio interativo** com galeria de fotos;
-- **Seção de serviços** detalhando pacotes e valores;
-- **Formulário de contato** para facilitar o envio de mensagens;
-- **Links para redes sociais** para promover meu trabalho;
-- **Design responsivo**, adaptado para dispositivos móveis, tablets e desktops;
-- **SEO otimizado** para melhorar a visibilidade nos motores de busca e facilitar o acesso.
+- **Home**: Página inicial com uma visão geral sobre mim e minha carreira;
+- **Projetos**: Lista interativa de projetos desenvolvidos, com links e descrições de cada um;
+- **Sobre mim**: Informações sobre minha trajetória, formação e objetivos;
+- **Contato**: Formulário de contato para facilitar a comunicação;
+- **Design Responsivo**: Totalmente adaptável para dispositivos móveis, tablets e desktops;
+- **SEO otimizado**: Melhorando a visibilidade nos motores de busca e aumentando o alcance.
 
 ## Tecnologias Utilizadas
 
-- **Next.js**: Framework React para construção de páginas otimizadas e com renderização do lado do servidor;
-- **TypeScript**: Utilizado para tipagem estática e melhorar a manutenção do código;
-- **Tailwind CSS**: Framework CSS para design responsivo, permitindo uma estilização rápida e eficiente;
-- **Font Awesome**: Para ícones de redes sociais e elementos visuais;
-- **React**: Para construção de interfaces interativas e componentes reutilizáveis.
+- **Next.js**: Framework React para construção de páginas rápidas e otimizadas, com renderização do lado do servidor (SSR) e geração de sites estáticos (SSG);
+- **TypeScript**: Utilizado para garantir segurança e robustez no código através de tipagem estática;
+- **Tailwind CSS**: Framework de CSS para estilização rápida e responsiva;
+- **React**: Biblioteca JavaScript para criar interfaces dinâmicas e interativas;
+- **Vercel**: Plataforma de deploy para Next.js (opcional, mas recomendado).
 
 ## Como Rodar o Projeto
 
@@ -28,4 +30,4 @@ Este é o meu **portfolio pessoal** desenvolvido com **Next.js**, **Tailwind CSS
 Clone o repositório para sua máquina local:
 
 ```bash
-git clone https://github.com/seu-usuario/portfolio-fotografo.git
+git clone https://github.com/seu-usuario/portfolio-pessoal.git
