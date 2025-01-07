@@ -9,6 +9,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head>
         <link rel="shortcut icon" type="image/x-icon" />
+        <title>David Beckham</title>
       </head>
       <body>
         {children}
