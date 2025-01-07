@@ -6,7 +6,7 @@ import Link from 'next/link';
 const CategoryProjectsCard = ({ title, description, image, projects }: CategoryProjects) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 duration-300">
     <div className="relative">
-      <Image src={image} alt={title}
+      <Image src={image} alt={title} width={500} height={500}
         className="w-full h-48 sm:h-56 object-cover transition-transform duration-300 hover:scale-110"
       />
 

@@ -33,8 +33,10 @@ const Hero = () => {
           </div>
           <div className="lg:w-1/2 w-full max-w-lg">
             <Image 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" 
+              src="/img/hero.avif" 
               alt="Developer workspace"
+              width={500}
+              height={500}
               className="rounded-lg shadow-xl w-full h-auto transform hover:scale-105 transition-transform duration-300"
             />
           </div>
