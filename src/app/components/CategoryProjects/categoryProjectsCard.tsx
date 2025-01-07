@@ -1,11 +1,12 @@
 import CategoryProjects from '@/app/types/categoryProjects';
 import { Construction, Wrench } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
-const CategoryProjectsCard = ({ id, title, description, image, projects }: CategoryProjects) => (
+const CategoryProjectsCard = ({ title, description, image, projects }: CategoryProjects) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 duration-300">
     <div className="relative">
-      <img src={image} alt={title}
+      <Image src={image} alt={title}
         className="w-full h-48 sm:h-56 object-cover transition-transform duration-300 hover:scale-110"
       />
 

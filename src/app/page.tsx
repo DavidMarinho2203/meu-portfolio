@@ -1,7 +1,6 @@
 'use client';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Projects from './components/CategoryProjects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import About from './components/About'

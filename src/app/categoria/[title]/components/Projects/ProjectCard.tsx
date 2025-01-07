@@ -1,13 +1,14 @@
 import { Project } from "@/app/types/categoryProjects";
+import Image from "next/image";
 
 
-function ProjectCard({ title, description, image, github, demo }: Project) {
+function ProjectCard({ title, description, image }: Project) {
 
   return (
     <div className="p-4">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all transform hover:scale-105 duration-300">
         <div className="relative">
-          <img
+          <Image
             src={image}
             alt={title}
             className="w-full h-48 sm:h-56 object-cover transition-transform duration-300 hover:scale-110"

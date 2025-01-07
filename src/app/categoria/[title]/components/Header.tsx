@@ -43,14 +43,14 @@ const Header = () => {
   );
 };
 
-const NavLink = ({ href, onClick, children, className }: { href: string, onClick: () => void, children: React.ReactNode, className?:string }) => (
-  <Link href={'/'} onClick={onClick} className={ className + ` text-gray-600 transition-colors hover:text-blue-600 flex gap-1 items-center justify-center font-bold`}>
+const NavLink = ({href, onClick, children, className }: { href: string, onClick: () => void, children: React.ReactNode, className?:string }) => (
+  <Link href={href} onClick={onClick} className={ className + ` text-gray-600 transition-colors hover:text-blue-600 flex gap-1 items-center justify-center font-bold`}>
     {children}
   </Link>
 );
 
 const MobileNavLink = ({ href, children, onClick }: { href: string, children: React.ReactNode; onClick: () => void }) => (
-  <Link href={'/'} onClick={onClick} className="block px-4 text-gray-600 transition-colors hover:text-blue-600">
+  <Link href={href} onClick={onClick} className="block px-4 text-gray-600 transition-colors hover:text-blue-600">
     {children}
   </Link>
 );
