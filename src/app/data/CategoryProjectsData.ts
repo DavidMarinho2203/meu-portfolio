@@ -1,6 +1,6 @@
 import type CategoryProjects from "../types/categoryProjects";
 
-export const CategoryProjectsData :CategoryProjects[] = [
+export const CategoryProjectsData: CategoryProjects[] = [
     {
         id: 1,
         title: "Pessoal",
@@ -9,11 +9,13 @@ export const CategoryProjectsData :CategoryProjects[] = [
         projects: [
             {
                 title: 'Bronzeamento',
-                description: 'Plataforma completa para uma empresa de bronzeamento',
-                image: '/img/bronze.png',
-                github: '',
-                demo: 'https://karol-bronze.netlify.app/'
-            },
+                description: 'Lading Page para uma empresa de bronzeamento',
+                image: '/img/resultados_dos_projetos/bronze.png',
+            },{
+                title: 'Fotógrafo',
+                description: 'Lading Page para uma profissional da fotógrafia',
+                image: '/img/resultados_dos_projetos/fotografo.png',
+            }
         ]
 
     },
@@ -34,10 +36,8 @@ export const CategoryProjectsData :CategoryProjects[] = [
         projects: [
             {
                 title: 'Salgateria',
-                description: 'Landing Page para uma loja nova de salgados',
-                image: '/img/salgateria.png',
-                github: '',
-                demo: 'https://reidossalgados.netlify.app/'
+                description: 'Landing Page para uma loja de salgados',
+                image: '/img/resultados_dos_projetos/salgateria.png',
             },
         ]
     }
