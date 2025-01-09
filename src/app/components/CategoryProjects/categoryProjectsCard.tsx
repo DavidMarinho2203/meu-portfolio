@@ -17,7 +17,7 @@ const CategoryProjectsCard = ({ title, description, image, projects }: CategoryP
         </div>
       </div>
     </div>
-    <div className="p-6 h-[14rem] flex flex-col justify-between gap-5">
+    <div className="p-6 h-[15rem] flex flex-col justify-between gap-5">
       <div>
         <h3 className="text-xl font-bold mb-2 text-gray-800">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
@@ -27,6 +27,7 @@ const CategoryProjectsCard = ({ title, description, image, projects }: CategoryP
         {projects ? (
           <Link
             href={`/categoria/${title}`}
+            
             className="flex gap-1 cursor-pointer hover:text-blue-600 duration-200 transition-all"
           >
             <Wrench />

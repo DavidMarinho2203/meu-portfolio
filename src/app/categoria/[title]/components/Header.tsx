@@ -34,7 +34,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="py-4 md:hidden">
             <div className="flex flex-col space-y-4">
-              <MobileNavLink href='/' onClick={() => scrollToSection("categoryProjects")}>Tela Inicial</MobileNavLink>
+              <MobileNavLink href='/' onClick={() => scrollToSection("categoryProjects")}><House /> Tela Inicial</MobileNavLink>
             </div>
           </div>
         )}
@@ -50,7 +50,7 @@ const NavLink = ({href, onClick, children, className }: { href: string, onClick:
 );
 
 const MobileNavLink = ({ href, children, onClick }: { href: string, children: React.ReactNode; onClick: () => void }) => (
-  <Link href={href} onClick={onClick} className="block px-4 text-gray-600 transition-colors hover:text-blue-600">
+  <Link href={href} onClick={onClick} className="flex gap-2 px-4 text-gray-600 transition-colors hover:text-blue-600">
     {children}
   </Link>
 );
