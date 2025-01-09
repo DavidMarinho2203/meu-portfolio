@@ -43,7 +43,7 @@ function ProjectCard({ title, description, image }: Project) {
           </button>
 
           <div className="max-w-[90vw] bg-white flex flex-col justify-center items-center gap-5 p-6 rounded-lg text-center">
-              <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 leading-tightv">{title}</h1>
+              <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 leading-tightv">{title}</h1>
               <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto ">{description}</p>
           </div>
 
