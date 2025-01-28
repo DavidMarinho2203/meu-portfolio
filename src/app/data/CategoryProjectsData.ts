@@ -21,15 +21,6 @@ export const CategoryProjectsData: CategoryProjects[] = [
     },
     {
         id: 2,
-        title: "Infoproduto",
-        description: "Para empreendedores que desejam vender produtos digitais (como cursos, e-books, webinars) ou físicos pela internet.",
-        image: "/img/infoproduto.jpg",
-        // projects: [
-        //   {}
-        // ]
-    },
-    {
-        id: 3,
         title: "Empresa",
         description: "Para empresas de pequeno e médio porte que buscam soluções digitais, como criação de sites, e-commerce e marketing online, para expandir seu alcance.",
         image: "/img/empresa.jpg",
