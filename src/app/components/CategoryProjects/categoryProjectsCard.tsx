@@ -1,5 +1,5 @@
 import CategoryProjects from '@/app/types/categoryProjects';
-import { Construction, Wrench } from 'lucide-react';
+import { Wrench } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
