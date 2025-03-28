@@ -30,6 +30,11 @@ export const CategoryProjectsData: CategoryProjects[] = [
                 description: 'Landing Page para uma loja de salgados',
                 image: '/img/resultados_dos_projetos/salgateria.png',
             },
+            {
+                title: 'Otimize Consultoria Jr',
+                description: 'Landing Page para empresa da Otimize',
+                image: '/img/resultados_dos_projetos/otimize.png',
+            },
         ]
     }
 ]
