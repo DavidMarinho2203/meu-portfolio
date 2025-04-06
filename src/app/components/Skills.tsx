@@ -5,7 +5,7 @@ const Skills = () => {
     { category: 'Frontend', items: ['(HTML, CSS, JavaScript)','React','Next.js','Tailwind CSS' ,'TypeScript', 'Java(POO)'] },
     { category: 'Backend', items: ['Node.js', 'Express', 'PostgreSQL'] },
     { category: 'Banco de Dados', items: ['Sql', 'MySql', 'PostgreSQL'] },
-    { category: 'Ferramentas', items: ['Git', 'VS Code', 'Figma'] },
+    { category: 'Ferramentas', items: ['Git', 'VS Code', 'Figma', 'Jira', 'Trello'] },
     { category: 'Soft Skills', items: ['Comunicação', 'Trabalho em Equipe', 'Resolução de Problemas', 'Adaptabilidade'] }
   ];
 
