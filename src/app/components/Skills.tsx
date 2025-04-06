@@ -2,7 +2,7 @@
 
 const Skills = () => {
   const skills = [
-    { category: 'Frontend', items: ['(HTML, CSS, JavaScript)','React','Next.js','Tailwind CSS' ,'TypeScript'] },
+    { category: 'Frontend', items: ['(HTML, CSS, JavaScript)','React','Next.js','Tailwind CSS' ,'TypeScript', 'Java(POO)'] },
     { category: 'Backend', items: ['Node.js', 'Express', 'PostgreSQL'] },
     { category: 'Banco de Dados', items: ['Sql', 'MySql', 'PostgreSQL'] },
     { category: 'Ferramentas', items: ['Git', 'VS Code', 'Figma'] },
