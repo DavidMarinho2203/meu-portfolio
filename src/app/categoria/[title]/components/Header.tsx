@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { House, Menu, X} from 'lucide-react';
+import { House, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 
 const Header = () => {
@@ -18,9 +18,9 @@ const Header = () => {
     <header className="fixed z-50 w-full shadow-sm bg-white/90 backdrop-blur-sm">
       <nav className="container px-6 py-4 mx-auto">
         <div className="flex items-center justify-between">
-          <NavLink href={"/"} onClick={() => scrollToSection("categoryProjects")} className="text-2xl font-bold text-gray-800">
+          <Link href="/" className="text-2xl font-bold text-gray-800">
             Dev<span className="text-blue-600">Portfolio</span>
-          </NavLink>
+          </Link>
 
           <div className="items-center hidden space-x-8 md:flex">
             <NavLink href='/' onClick={() => scrollToSection("categoryProjects")}>Tela Inicial <House /></NavLink>
@@ -43,8 +43,8 @@ const Header = () => {
   );
 };
 
-const NavLink = ({href, onClick, children, className }: { href: string, onClick: () => void, children: React.ReactNode, className?:string }) => (
-  <Link href={href} onClick={onClick} className={ className + ` text-gray-600 transition-colors hover:text-blue-600 flex gap-1 items-center justify-center font-bold`}>
+const NavLink = ({ href, onClick, children, className }: { href: string, onClick: () => void, children: React.ReactNode, className?: string }) => (
+  <Link href={href} onClick={onClick} className={className + ` text-gray-600 transition-colors hover:text-blue-600 flex gap-1 items-center justify-center font-bold`}>
     {children}
   </Link>
 );
