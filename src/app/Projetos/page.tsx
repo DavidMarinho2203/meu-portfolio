@@ -1,9 +1,10 @@
 import Header from '@/components/Header'
-import { ExternalLink, Github, Video } from 'lucide-react'
+import { ExternalLink, Github } from 'lucide-react'
 import React from 'react'
 import Projetos from '@/data/Projetos'
 import Link from 'next/link'
 import VideoCompoment from '@/components/VideoComponent'
+import Image from 'next/image'
 
 
 const page = () => {
@@ -23,7 +24,7 @@ const page = () => {
                         <div key={index} className="flex flex-col items-center justify-between gap-5 md:w-[320px] lg:w-[400px] bg-gray-800/70 rounded-lg p-4">
                             {/* Pagar a foto e colocar ela para mostrar topo da foto */}
                             <div className='flex flex-col gap-5 w-full'>
-                                <img src={item.image} alt={item.title} className="w-full h-[200px] lg:h-[200px] rounded-lg object-cover" />
+                                <Image src={item.image} alt={item.title} width={800} height={800} className="w-full h-[200px] lg:h-[200px] rounded-lg object-cover" />
 
                                 <h2 className="text-center text-xl font-bold lg:text-3xl text-white">{item.title}</h2>
                             </div>

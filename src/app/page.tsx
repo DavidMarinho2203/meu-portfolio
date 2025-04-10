@@ -1,9 +1,6 @@
 'use client';
-
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { CodeXml, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
+import { Github, Linkedin,  } from "lucide-react";
 import skills from "@/data/Skills";
 import VideoCompoment from "@/components/VideoComponent";
 
