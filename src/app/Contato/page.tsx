@@ -4,7 +4,7 @@ import VideoCompoment from '@/components/VideoComponent';
 import { Send } from 'lucide-react';
 import React, { useState } from 'react'
 
-const page = () => {
+const Page = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -125,4 +125,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

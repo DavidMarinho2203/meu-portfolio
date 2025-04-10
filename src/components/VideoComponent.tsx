@@ -1,6 +1,6 @@
 import React from 'react'
 
-const VideoCompoment = ({ arquivoMP4 }: { arquivoMP4: String }) => {
+const VideoCompoment = ({ arquivoMP4 }: { arquivoMP4: string }) => {
     return (
         <>
             {/* Vídeo de fundo */}
