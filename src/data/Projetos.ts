@@ -1,25 +1,12 @@
 const Projetos = [
-
-
-
-
-
-
-
-
-
-
-
-
-    
     {
         title: 'Otimize Consultoria Jr',
         description: 'Landing Page para empresa da Otimize',
         image: '/img/resultados_dos_projetos/otimize.png',
         site: "https://otimizeconsultoriapb.netlify.app/",
         github: "https://github.com/DavidMarinho2203/projeto-otimize",
-    },
-    {
+
+    },{
         title: 'Bronzeamento',
         description: 'Lading Page para uma empresa de bronzeamento',
         image: '/img/resultados_dos_projetos/bronze.png',

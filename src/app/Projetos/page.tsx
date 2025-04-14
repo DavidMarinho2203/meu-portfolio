@@ -11,8 +11,8 @@ const page = () => {
     return (
         <div className="relative min-h-screen bg-gradient-to-b from-[#0a192f] to-[#112240] overflow-hidden flex justify-center items-center pb-10">
 
-           <VideoCompoment arquivoMP4={"/videos/projetos.mp4"} />
-            
+            <VideoCompoment arquivoMP4={"/videos/projetos.mp4"} />
+
             <Header />
 
             <div className=" w-full md:w-[90%] rounded-lg shadow-lg z-20 flex flex-col gap-20 justify-center container mx-auto p-8 mt-[10vh]">
@@ -32,13 +32,18 @@ const page = () => {
                             <p className="text-center text-lg font-sans text-gray-300">{item.description}</p>
 
                             <div className="flex w-full p-4 gap-5 justify-center text-white">
-                                <Link href={item.site} target="_blank" rel="noopener noreferrer">
-                                    <ExternalLink className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
-                                </Link>
-                                <a href={item.github} target="_blank" rel="noopener noreferrer">
+
+                                {item?.site && (
+                                    <Link href={item.site} target="_blank" rel="noopener noreferrer">
+                                        <ExternalLink className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
+                                    </Link>
+                                )}
+
+                                <a href={item?.github} target="_blank" rel="noopener noreferrer">
                                     <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
                                 </a>
                             </div>
+
                         </div>
                     ))}
                 </div>
