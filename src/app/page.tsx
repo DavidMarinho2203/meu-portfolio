@@ -1,6 +1,5 @@
-'use client';
 import Header from "@/components/Header";
-import { Github, Linkedin,  } from "lucide-react";
+import { Github, Linkedin, } from "lucide-react";
 import skills from "@/data/Skills";
 import VideoCompoment from "@/components/VideoComponent";
 
