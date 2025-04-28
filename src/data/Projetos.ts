@@ -1,5 +1,12 @@
 const Projetos = [
     {
+        title: 'Interface extensões',
+        description: 'Interface do gerenciador de extensões',
+        image: '/img/resultados_dos_projetos/gerenciadorDeExtensoes.png',
+        site: "https://browser-extension-manager-ui-psi.vercel.app/",
+        github: "https://github.com/DavidMarinho2203/browser-extension-manager-ui",
+
+    },{
         title: 'Otimize Consultoria Jr',
         description: 'Landing Page para empresa da Otimize',
         image: '/img/resultados_dos_projetos/otimize.png',
