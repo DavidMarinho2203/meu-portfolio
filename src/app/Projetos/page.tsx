@@ -19,28 +19,26 @@ const page = () => {
 
                 <h2 className='font-bold text-4xl md:text-5xl text-white text-center'> Meus Projetos</h2>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                     {Projetos.map((item, index) => (
-                        <div key={index} className="flex flex-col items-center justify-between gap-5 md:w-[320px] lg:w-[400px] bg-gray-800/70 rounded-lg p-4">
-                            {/* Pagar a foto e colocar ela para mostrar topo da foto */}
-                            <div className='flex flex-col gap-5 w-full'>
-                                <Image src={item.image} alt={item.title} width={800} height={800} className="w-full h-[200px] lg:h-[200px] rounded-lg object-cover" />
+                        <div key={index} className="flex flex-col justify-between gap-5 min-w-40 p-4 bg-gray-800/50 rounded-lg">
+
+                            <div className='flex flex-col gap-5'>
+                                <Image src={item.image} alt={item.title} width={800} height={200} className="w-full h-[200px] lg:h-[200px] rounded-lg object-cover" />
 
                                 <h2 className="text-center text-xl font-bold lg:text-3xl text-white">{item.title}</h2>
+                                <p className="text-center text-lg font-sans text-gray-300">{item.description}</p>
+
                             </div>
 
-                            <p className="text-center text-lg font-sans text-gray-300">{item.description}</p>
-
-                            <div className="flex w-full p-4 gap-5 justify-center text-white">
-
+                            <div className='flex gap-3 items-center justify-center'>
                                 {item?.site && (
                                     <Link href={item.site} target="_blank" rel="noopener noreferrer">
-                                        <ExternalLink className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
+                                        <ExternalLink className="hover:text-green-500 text-gray-300/50 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
                                     </Link>
                                 )}
-
                                 <a href={item?.github} target="_blank" rel="noopener noreferrer">
-                                    <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
+                                    <Github className="hover:text-green-500 text-gray-300/50 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
                                 </a>
                             </div>
 
