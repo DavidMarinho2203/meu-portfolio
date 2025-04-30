@@ -1,5 +1,12 @@
 const Projetos = [
     {
+        title: 'Pedra,Papel, Tesoura',
+        description: 'Jogo de pedra, papel e tesoura',
+        image: '/img/resultados_dos_projetos/pedrapapeltesoura.png',
+        site: "https://rock-paper-scissors-master-dun.vercel.app/",
+        github: "https://github.com/DavidMarinho2203/rock-paper-scissors-master",
+
+    },{
         title: 'Interface extensões',
         description: 'Interface do gerenciador de extensões',
         image: '/img/resultados_dos_projetos/gerenciadorDeExtensoes.png',
