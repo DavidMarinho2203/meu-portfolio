@@ -1,6 +1,6 @@
 import React from 'react'
 
-const VideoCompoment = ({ arquivoMP4 }: { arquivoMP4: string }) => {
+const VideoCompoment = ({ arquivoMP4, arquivoStatic }: { arquivoMP4: string, arquivoStatic: string }) => {
     return (
         <>
             {/* Vídeo de fundo */}
@@ -10,10 +10,12 @@ const VideoCompoment = ({ arquivoMP4 }: { arquivoMP4: string }) => {
                 loop
                 muted
                 playsInline
+                poster={arquivoStatic}
             >
-                <source src={`${arquivoMP4}`} type="video/mp4" />
+                <source src={arquivoMP4} type="video/mp4" />
                 Seu navegador não suporta vídeos em HTML5.
             </video>
+
 
             {/* Camada escura sobre o vídeo (opcional) */}
             <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-[#0a192f] to-[#112240] overflow-hidden flex justify-center items-center pb-10">
 
-      <VideoCompoment arquivoMP4={"/videos/sobre.mp4"} />
+      <VideoCompoment arquivoMP4={"/videos/sobre.mp4"} arquivoStatic={"/videos/static/sobre.jpeg"}/>
 
       {/* Camada escura sobre o vídeo (opcional) */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />
@@ -41,7 +41,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col items-start justify-start gap-5 md:w-fit text-white">
-          <h2 className="text-start text-xl font-bold lg:text-3xl">Olá, eu sou a David Beckham 👋</h2>
+          <h2 className="text-start text-xl font-bold lg:text-3xl">Olá, eu sou o David Beckham 👋</h2>
 
           {[
             "Desenvolvedor frontend em formação, determinado a transformar ideias em interfaces reais e funcionais. Trabalho com React, Next.js e Tailwind CSS, focando em construir aplicações limpas, modernas e fáceis de usar."
