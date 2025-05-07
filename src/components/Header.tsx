@@ -61,10 +61,10 @@ const Header = () => {
                             )}
 
                             <div className="flex w-full p-4 gap-5">
-                                <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" title='Ir para o Linkedin'>
+                                <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" rel="noopener noreferrer" title='Ir para o Linkedin'>
                                     <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                                 </a>
-                                <a href={"https://github.com/DavidMarinho2203"} target="_blank" title='Ir para o Github'>
+                                <a href={"https://github.com/DavidMarinho2203"} target="_blank" rel="noopener noreferrer" title='Ir para o Github'>
                                     <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                                 </a>
                             </div>
@@ -95,10 +95,10 @@ const Header = () => {
                         )}
 
                         <div className="flex items-center justify-center gap-5">
-                            <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" title='Ir para o Linkedin'>
+                            <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" rel="noopener noreferrer" title='Ir para o Linkedin'>
                                 <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                             </a>
-                            <a href={"https://github.com/DavidMarinho2203"} target="_blank" title='Ir para o Github'>
+                            <a href={"https://github.com/DavidMarinho2203"} target="_blank" rel="noopener noreferrer" title='Ir para o Github'>
                                 <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                             </a>
                         </div>

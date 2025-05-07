@@ -1,6 +1,12 @@
 import Footer from "@/components/Footer";
 import "./globals.css";
 
+// Metadata
+export const metadata = {
+  title: "David Beckham Dev",
+  description: "Desenvolvedor Frontend",
+};  
+
 export default function RootLayout({
 children,
 }: Readonly<{

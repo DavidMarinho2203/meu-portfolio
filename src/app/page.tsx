@@ -31,17 +31,17 @@ export default function Home() {
           </video>
 
           <div className="flex w-full p-4 gap-5 justify-center text-white">
-            <a href="https://github.com/DavidMarinho2203" target="_blank" title="Ir para o Github"> 
+            <a href="https://github.com/DavidMarinho2203" target="_blank" rel="noopener noreferrer" title="Ir para o Github"> 
               <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
             </a>
-            <a href="mailto:davidbeckhampm.dev@gmail.com" target="_blank" title="Ir para o Linkedin">
+            <a href="mailto:davidbeckhampm.dev@gmail.com" target="_blank" rel="noopener noreferrer" title="Ir para o Linkedin">
               <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
             </a>
           </div>
         </div>
 
         <div className="flex flex-col items-start justify-start gap-5 md:w-fit text-white">
-          <h2 className="text-start text-xl font-bold lg:text-3xl">Olá, eu sou o David Beckham 👋</h2>
+          <h1 className="text-start text-xl font-bold lg:text-3xl">Olá, eu sou o David Beckham 👋</h1>
 
           {[
             "Desenvolvedor frontend em formação, determinado a transformar ideias em interfaces reais e funcionais. Trabalho com React, Next.js e Tailwind CSS, focando em construir aplicações limpas, modernas e fáceis de usar."

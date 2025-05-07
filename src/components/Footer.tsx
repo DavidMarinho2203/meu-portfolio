@@ -46,17 +46,17 @@ const Footer = () => {
                         Conecte-se
                     </h2>
 
-                    <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Linkedin'>
+                    <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" rel="noopener noreferrer" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Linkedin'>
                         <Linkedin className="h-4 w-4 text-green-500" />
                         Linkedin
                     </a>
 
-                    <a href={"https://github.com/DavidMarinho2203"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Github'>
+                    <a href={"https://github.com/DavidMarinho2203"} target="_blank" rel="noopener noreferrer" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Github'>
                         <Github className="h-4 w-4 text-green-500" />
                         Github
                     </a>
 
-                    <a href={"mailto:davidbeckhampm.dev@gmail.com"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Email'>
+                    <a href={"mailto:davidbeckhampm.dev@gmail.com"} target="_blank" rel="noopener noreferrer" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Email'>
                         <Mail className="h-4 w-4 text-green-500" />
                         Contato
                     </a>
