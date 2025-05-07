@@ -2,13 +2,12 @@ import Header from "@/components/Header";
 import { Github, Linkedin, } from "lucide-react";
 import skills from "@/data/Skills";
 import VideoCompoment from "@/components/VideoComponent";
-import VideoLogo from "@/components/VideoLogo";
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-[#0a192f] to-[#112240] overflow-hidden flex justify-center items-center pb-10">
 
-      <VideoCompoment arquivoMP4={"/videos/sobre.mp4"} arquivoStatic={"/videos/static/sobre.webp"} />
+      <VideoCompoment arquivoMP4={"/videos/sobre.mp4"} arquivoStatic={"/videos/static/sobre.webp"}/>
 
       {/* Camada escura sobre o vídeo (opcional) */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />
@@ -20,10 +19,20 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center gap-5 md:w-[300px] lg:w-[400px]">
 
 
-          <VideoLogo />
+          <video
+            className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full object-cover z-0"
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={"/videos/static/logo.webp"}
+          >
+            <source src="/videos/logo.mp4" type="video/mp4" />
+            Seu navegador não suporta vídeos em HTML5.
+          </video>
 
           <div className="flex w-full p-4 gap-5 justify-center text-white">
-            <a href="https://github.com/DavidMarinho2203" target="_blank" rel="noopener noreferrer" title="Ir para o Github">
+            <a href="https://github.com/DavidMarinho2203" target="_blank" rel="noopener noreferrer" title="Ir para o Github"> 
               <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
             </a>
             <a href="mailto:davidbeckhampm.dev@gmail.com" target="_blank" rel="noopener noreferrer" title="Ir para o Linkedin">
