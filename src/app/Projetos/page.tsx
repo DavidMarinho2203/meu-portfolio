@@ -11,7 +11,7 @@ const page = () => {
     return (
         <div className="relative min-h-screen bg-gradient-to-b from-[#0a192f] to-[#112240] overflow-hidden flex justify-center items-center pb-10">
 
-            <VideoCompoment arquivoMP4={"/videos/projetos.mp4"} arquivoStatic={"/videos/static/projetos.jpeg"} />
+            <VideoCompoment arquivoMP4={"/videos/projetos.mp4"} arquivoStatic={"/videos/static/projetos.webp"} />
 
             <Header />
 

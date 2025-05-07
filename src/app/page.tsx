@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-[#0a192f] to-[#112240] overflow-hidden flex justify-center items-center pb-10">
 
-      <VideoCompoment arquivoMP4={"/videos/sobre.mp4"} arquivoStatic={"/videos/static/sobre.jpeg"}/>
+      <VideoCompoment arquivoMP4={"/videos/sobre.mp4"} arquivoStatic={"/videos/static/sobre.webp"}/>
 
       {/* Camada escura sobre o vídeo (opcional) */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />
@@ -25,6 +25,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            poster={"/videos/static/logo.webp"}
           >
             <source src="/videos/logo.mp4" type="video/mp4" />
             Seu navegador não suporta vídeos em HTML5.
