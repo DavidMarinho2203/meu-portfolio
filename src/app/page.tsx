@@ -31,10 +31,10 @@ export default function Home() {
           </video>
 
           <div className="flex w-full p-4 gap-5 justify-center text-white">
-            <a href="https://github.com/DavidMarinho2203" target="_blank">
+            <a href="https://github.com/DavidMarinho2203" target="_blank" title="Ir para o Github"> 
               <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
             </a>
-            <a href="mailto:davidbeckhampm.dev@gmail.com" target="_blank">
+            <a href="mailto:davidbeckhampm.dev@gmail.com" target="_blank" title="Ir para o Linkedin">
               <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
             </a>
           </div>

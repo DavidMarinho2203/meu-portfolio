@@ -24,17 +24,17 @@ const Footer = () => {
                         Links Úteis
                     </h2>
 
-                    <Link href={"/"} className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3">
+                    <Link href={"/"} className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para página inicial'>
                         <ExternalLink className="h-4 w-4 text-green-500" />
                         Sobre mim
                     </Link>
 
-                    <Link href={"/Projetos"} className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3">
+                    <Link href={"/Projetos"} className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para página de Projetos'>
                         <ExternalLink className="h-4 w-4 text-green-500" />
                         Projetos
                     </Link>
 
-                    <Link href={"/Contato"} className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3">
+                    <Link href={"/Contato"} className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para página de Contato'>
                         <ExternalLink className="h-4 w-4 text-green-500" />
                         Contato
                     </Link>
@@ -46,17 +46,17 @@ const Footer = () => {
                         Conecte-se
                     </h2>
 
-                    <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3">
+                    <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Linkedin'>
                         <Linkedin className="h-4 w-4 text-green-500" />
                         Linkedin
                     </a>
 
-                    <a href={"https://github.com/DavidMarinho2203"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3">
+                    <a href={"https://github.com/DavidMarinho2203"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Github'>
                         <Github className="h-4 w-4 text-green-500" />
                         Github
                     </a>
 
-                    <a href={"mailto:davidbeckhampm.dev@gmail.com"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3">
+                    <a href={"mailto:davidbeckhampm.dev@gmail.com"} target="_blank" className="w-fit flex items-center gap-2 font-extralight text-base/7 hover:text-green-500 transition-all ease-in-out duration-300 hover:ml-3" title='Ir para meu Email'>
                         <Mail className="h-4 w-4 text-green-500" />
                         Contato
                     </a>
@@ -71,7 +71,7 @@ const Footer = () => {
                 <p className="text-sm font-extralight">© 2025 David Beckham - Todos os direitos reservados.</p>
                 {/* Botão que sobe para o topo */}
                 <button
-                    className=" text-gray-500 px-4 py-2 hover:scale-125 hover:text-green-500 transition-all ease-in-out duration-300"
+                    className=" text-gray-500 px-4 py-2 cursor-pointer hover:scale-125 hover:text-green-500 transition-all ease-in-out duration-300"
                     onClick={() => {
                         window.scrollTo({
                             top: 0,

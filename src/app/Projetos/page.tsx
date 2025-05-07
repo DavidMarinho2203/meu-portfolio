@@ -24,7 +24,7 @@ const page = () => {
                         <div key={index} className="flex flex-col justify-between gap-5 min-w-40 p-4 bg-gray-800/50 rounded-lg">
 
                             <div className='flex flex-col gap-5'>
-                                <Image src={item.image} alt={item.title} width={800} height={200} className="w-full h-[200px] lg:h-[200px] rounded-lg object-cover" />
+                                <Image src={item.image} alt={item.title} width={800} height={200} className="w-full h-[200px] lg:h-[200px] rounded-lg object-cover" title={`Imagem do projeto ${item.title}`} />
 
                                 <h2 className="text-center text-xl font-bold lg:text-3xl text-white">{item.title}</h2>
                                 <p className="text-center text-lg font-sans text-gray-300">{item.description}</p>
@@ -33,11 +33,11 @@ const page = () => {
 
                             <div className='flex gap-3 items-center justify-center'>
                                 {item?.site && (
-                                    <Link href={item.site} target="_blank" rel="noopener noreferrer">
+                                    <Link href={item.site} target="_blank" rel="noopener noreferrer" title='Ir para o site no Online'>
                                         <ExternalLink className="hover:text-green-500 text-gray-300/50 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
                                     </Link>
                                 )}
-                                <a href={item?.github} target="_blank" rel="noopener noreferrer">
+                                <a href={item?.github} target="_blank" rel="noopener noreferrer" title='Ir para o código no Github'>
                                     <Github className="hover:text-green-500 text-gray-300/50 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
                                 </a>
                             </div>

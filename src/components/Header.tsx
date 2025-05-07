@@ -25,11 +25,11 @@ const Header = () => {
     return (
         <div className="absolute top-0 flex flex-col items-center justify-center w-full container mx-auto text-white z-30">
             <div className="flex items-center justify-between w-full h-full px-4 py-3 bg-transparent rounded-md">
-                <Link className="text-xl font-bold flex gap-5 justify-center items-center hover:text-green-500 transition-all ease-in-out duration-300" href="/">
-                    <SquareCode className='text-green-500 w-8 h-8' />
+                <Link className="text-xl font-bold flex gap-5 justify-center items-center hover:text-green-500 transition-all ease-in-out duration-300" href="/" title='Ir para página inicial'>
+                    <SquareCode className='text-green-500 w-8 h-8'  />
                     {screenWidth > 768 && "David Beckham Dev"}
                 </Link>
-                <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-2xl">
+                <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-2xl" title='Abrir/Fechar Menu'>
                     {isOpen ? <X /> : <Menu />}
                 </button>
 
@@ -47,6 +47,7 @@ const Header = () => {
                                 <Link
                                     key={index}
                                     href={item == "Sobre" ? "/" : `/${item}`}
+                                    title={`ir para página ${item}`}
                                     className={
                                         `p-4 hover:bg-gray-500 w-full font-bold transition-all ease-in-out duration-300
                                     ${pathname === `/${item === "Sobre" ? "" : item}` ? " text-green-500 " : "border-transparent "}
@@ -60,10 +61,10 @@ const Header = () => {
                             )}
 
                             <div className="flex w-full p-4 gap-5">
-                                <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank">
+                                <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" title='Ir para o Linkedin'>
                                     <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                                 </a>
-                                <a href={"https://github.com/DavidMarinho2203"} target="_blank">
+                                <a href={"https://github.com/DavidMarinho2203"} target="_blank" title='Ir para o Github'>
                                     <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                                 </a>
                             </div>
@@ -79,6 +80,7 @@ const Header = () => {
                             <Link
                                 key={index}
                                 href={item == "Sobre" ? "/" : `/${item}`}
+                                title={`ir para página ${item}`}
                                 className={
                                     `pt-2 pb-0 font-semibold border-b-2 text-sm   
                                     hover:text-green-500 hover:border-green-500  transition-all ease-in-out duration-300
@@ -93,10 +95,10 @@ const Header = () => {
                         )}
 
                         <div className="flex items-center justify-center gap-5">
-                            <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank">
+                            <a href={"https://www.linkedin.com/in/david-beckham-278644227/"} target="_blank" title='Ir para o Linkedin'>
                                 <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                             </a>
-                            <a href={"https://github.com/DavidMarinho2203"} target="_blank">
+                            <a href={"https://github.com/DavidMarinho2203"} target="_blank" title='Ir para o Github'>
                                 <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300" />
                             </a>
                         </div>
