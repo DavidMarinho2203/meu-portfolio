@@ -1,75 +1,153 @@
-import Header from "@/components/Header";
-import { Github, Linkedin, } from "lucide-react";
-import skills from "@/data/Skills";
-import VideoCompoment from "@/components/VideoComponent";
+import { ExternalLink, Github, Linkedin, Mail } from "lucide-react"
+import Link from "next/link"
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+import Projetos from "@/db/data/Projetos"
+import skills from "@/db/data/Skills"
 
 export default function Home() {
+  const emphasisProjeto = Projetos.filter((projeto) => projeto.emphasis)
+
   return (
-    <div className="relative min-h-screen bg-gradient-to-b from-[#0a192f] to-[#112240] overflow-hidden flex justify-center items-center pb-10">
+    <div className="flex min-h-screen flex-col">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-4">
+        {/* Perfil */}
+        <div className="border-primary/30 flex w-full flex-col items-center justify-center gap-4 border-b-1 pt-10 md:w-3xl">
+          <Avatar className="size-20 md:size-30">
+            <AvatarImage
+              src="/avatar.jpg"
+              alt="Avatar do David Beckham Dev"
+              className="object-cover"
+            />
+            <AvatarFallback>DB</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col items-center justify-center gap-3 pb-6">
+            <h1 className="text-primary text-xl font-bold md:text-2xl">
+              David Beckham
+            </h1>
+            <p className="text-md font-semibold">Desenvolvedor Front-end</p>
 
-      <VideoCompoment arquivoMP4={"/videos/sobre.mp4"} arquivoStatic={"/videos/static/sobre.webp"}/>
-
-      {/* Camada escura sobre o vídeo (opcional) */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />
-      {/* Conteúdo acima do vídeo */}
-      <Header />
-
-      <div className="bg-gray-800/50 w-[90%] md:w-[90%] rounded-lg shadow-lg z-20 grid grid-cols-1 md:grid-cols-2 gap-5 justify-center container mx-auto p-8 mt-[10vh]">
-
-        <div className="flex flex-col items-center justify-center gap-5 md:w-[300px] lg:w-[400px]">
-
-
-          <video
-            className="w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full object-cover z-0"
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster={"/videos/static/logo.webp"}
-          >
-            <source src="/videos/logo.mp4" type="video/mp4" />
-            Seu navegador não suporta vídeos em HTML5.
-          </video>
-
-          <div className="flex w-full p-4 gap-5 justify-center text-white">
-            <a href="https://github.com/DavidMarinho2203" target="_blank" rel="noopener noreferrer" title="Ir para o Github"> 
-              <Linkedin className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
-            </a>
-            <a href="mailto:davidbeckhampm.dev@gmail.com" target="_blank" rel="noopener noreferrer" title="Ir para o Linkedin">
-              <Github className="hover:text-green-500 cursor-pointer transition-all ease-in-out duration-300 w-8 h-8" />
-            </a>
+            <nav>
+              <ul className="flex gap-4">
+                {[
+                  {
+                    id: 1,
+                    icon: Github,
+                    link: "",
+                    name: "Github",
+                  },
+                  {
+                    id: 2,
+                    icon: Linkedin,
+                    link: "",
+                    name: "Linkedin",
+                  },
+                  {
+                    id: 3,
+                    icon: Mail,
+                    link: "",
+                    name: "Email",
+                  },
+                ].map((item) => (
+                  <Link
+                    href={item.link}
+                    className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
+                    key={item.id}
+                    title={item.name}
+                  >
+                    <item.icon className="h-5 w-5" />
+                    <p className="text-sm">{item.name}</p>
+                  </Link>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
-
-        <div className="flex flex-col items-start justify-start gap-5 md:w-fit text-white">
-          <h1 className="text-start text-xl font-bold lg:text-3xl">Olá, eu sou o David Beckham 👋</h1>
-
-          {[
-            "Desenvolvedor frontend em formação, determinado a transformar ideias em interfaces reais e funcionais. Trabalho com React, Next.js e Tailwind CSS, focando em construir aplicações limpas, modernas e fáceis de usar."
-            , "Sou movido por aprendizado constante e pela vontade de crescer na área. Cada projeto é uma oportunidade de praticar, errar, ajustar e evoluir. Gosto de codar com propósito: escrever componentes reutilizáveis, cuidar da performance e entregar algo que realmente funcione no dia a dia."
-            , "Meu foco é ser direto e eficiente, tanto no código quanto na experiência do usuário. Acredito que soluções simples bem feitas fazem mais diferença do que efeitos bonitos que ninguém usa. Busco construir coisas que ajudem, que funcionem, que resolvam."
-            , "Ainda tô no começo da jornada, mas levo a sério cada linha de código. Aprendo com cada desafio, cada bug e cada projeto que coloco no ar. Tô aqui pra crescer e pra fazer acontecer."
-          ].map((item, index) => (
-            <p key={index} className="text-start text-lg font-sans text-gray-300">
-              {item}
-            </p>
-          ))}
-
-          <div className="flex flex-wrap">
-            {skills.map((skill, index) => (
-              <div key={index} className="">
-                <p className="text-start text-sm font-sans  p-2 bg-green-900/30 rounded-lg m-2 text-green-500 border-[1px] border-green-500">
-                  {skill}
-                </p>
-              </div>
+        {/* Sobre mim */}
+        <div className="flex w-full flex-col gap-4 text-start md:w-3xl">
+          <h2 className="text-primary/80 text-lg font-bold md:text-xl">
+            Sobre
+          </h2>
+          <p className="text-muted-foreground md:text-md text-sm leading-7 font-semibold">
+            Desenvolvedor frontend em formação, determinado a transformar ideias
+            em interfaces reais e funcionais. Trabalho com React, Next.js e
+            Tailwind CSS, focando em construir aplicações limpas, modernas e
+            fáceis de usar.
+          </p>
+        </div>
+        {/* Tecnologias */}
+        <div className="flex w-full flex-col gap-4 text-start md:w-3xl">
+          <h2 className="text-primary/80 text-lg font-bold md:text-xl">
+            Tecnologias
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {skills.map((skill) => (
+              <span
+                key={skill}
+                className="text-muted-foreground hover:bg-primary/10 cursor-pointer rounded-sm border-1 bg-transparent px-3 py-1 text-sm font-medium transition-colors"
+              >
+                {skill}
+              </span>
             ))}
           </div>
-
+        </div>
+        {/* Em Destaque */}
+        <div className="flex w-full flex-col gap-4 text-start md:w-3xl">
+          <h2 className="text-primary/80 text-lg font-bold md:text-xl">
+            Em Destaque
+          </h2>
+          <div className="flex flex-col gap-4">
+            {emphasisProjeto.map((skill) => (
+              <Card
+                key={skill.id}
+                className="hover:border-primary w-full border-1 transition-colors duration-200 ease-in-out"
+              >
+                <CardHeader>
+                  <CardTitle className="text-primary">{skill.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p>{skill.description}</p>
+                </CardContent>
+                <CardFooter className="flex gap-4">
+                  {[
+                    {
+                      id: 1,
+                      icon: Github,
+                      link: "",
+                      name: "Código fonte",
+                    },
+                    {
+                      id: 2,
+                      icon: ExternalLink,
+                      link: "",
+                      name: "Preview",
+                    },
+                  ].map((item) => (
+                    <Link
+                      key={item.id}
+                      href={item.link}
+                      className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
+                      title={item.name}
+                    >
+                      <item.icon className="h-5 w-5" />
+                      <p className="text-sm">{item.name}</p>
+                    </Link>
+                  ))}
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
         </div>
 
+        {/* Todos os Projetos */}
       </div>
-
     </div>
-
-  );
+  )
 }

@@ -1,30 +1,35 @@
-import Footer from "@/components/Footer";
-import "./globals.css";
+import "./globals.css"
 
-// Metadata
-export const metadata = {
+import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+})
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+})
+
+export const metadata: Metadata = {
   title: "David Beckham Dev",
-  description: "Desenvolvedor Frontend",
-};  
+  description: "Portfólio do David Beckham Dev",
+}
 
 export default function RootLayout({
-children,
+  children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
-
   return (
-    <html lang="pt-br">
-      <head>
-        <link rel="shortcut icon" type="image/x-icon" />
-        <title>David Beckham</title>
-      </head>
-      <body>
-        <div className="flex flex-col">
-          {children}
-          <Footer />
-        </div>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
-  );
+  )
 }
