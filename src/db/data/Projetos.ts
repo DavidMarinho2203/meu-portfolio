@@ -29,9 +29,9 @@ const Projetos = [
   {
     id: 4,
     title: "Otimize Consultoria Jr",
-    description: "Landing Page para empresa da Otimize",
+    description: "Landing Page para uma empresa jr de consultoria",
     image: "/img/resultados_dos_projetos/otimize.webp",
-    site: "https://otimizeconsultoriapb.netlify.app/",
+    site: "https://otimizeconsultoriapbjr.netlify.app/",
     github: "https://github.com/DavidMarinho2203/projeto-otimize",
     emphasis: true,
   },

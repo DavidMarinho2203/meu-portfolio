@@ -14,6 +14,7 @@ import skills from "@/db/data/Skills"
 
 export default function Home() {
   const emphasisProjeto = Projetos.filter((projeto) => projeto.emphasis)
+  const otherProjeto = Projetos.filter((projeto) => !projeto.emphasis)
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -116,30 +117,25 @@ export default function Home() {
                   <p>{skill.description}</p>
                 </CardContent>
                 <CardFooter className="flex gap-4">
-                  {[
-                    {
-                      id: 1,
-                      icon: Github,
-                      link: "",
-                      name: "Código fonte",
-                    },
-                    {
-                      id: 2,
-                      icon: ExternalLink,
-                      link: "",
-                      name: "Preview",
-                    },
-                  ].map((item) => (
+                  <Link
+                    href={skill.github}
+                    target="_blank"
+                    className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
+                  >
+                    <Github className="h-5 w-5" />
+                    <p className="text-sm">Código Fonte</p>
+                  </Link>
+
+                  {skill.site && (
                     <Link
-                      key={item.id}
-                      href={item.link}
+                      href={skill.site}
+                      target="_blank"
                       className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
-                      title={item.name}
                     >
-                      <item.icon className="h-5 w-5" />
-                      <p className="text-sm">{item.name}</p>
+                      <ExternalLink className="h-5 w-5" />
+                      <p className="text-sm">Preview</p>
                     </Link>
-                  ))}
+                  )}
                 </CardFooter>
               </Card>
             ))}
@@ -147,6 +143,57 @@ export default function Home() {
         </div>
 
         {/* Todos os Projetos */}
+        <div className="flex w-full flex-col gap-4 text-start md:w-3xl">
+          <h2 className="text-primary/80 text-lg font-bold md:text-xl">
+            Outros Projetos
+          </h2>
+          {otherProjeto.map((skill) => (
+            <Card
+              key={skill.id}
+              className="hover:border-primary w-full border-1 transition-colors duration-200 ease-in-out"
+            >
+              <CardHeader>
+                <CardTitle className="text-primary">{skill.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>{skill.description}</p>
+              </CardContent>
+              <CardFooter className="flex gap-4">
+                <Link
+                  href={skill.github}
+                  target="_blank"
+                  className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
+                >
+                  <Github className="h-5 w-5" />
+                  <p className="text-sm">Código Fonte</p>
+                </Link>
+
+                {skill.site && (
+                  <Link
+                    href={skill.site}
+                    target="_blank"
+                    className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
+                  >
+                    <ExternalLink className="h-5 w-5" />
+                    <p className="text-sm">Preview</p>
+                  </Link>
+                )}
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+
+        {/* Footer */}
+        <p className="py-8">
+          Todos os direitos reservados para{" "}
+          <Link
+            className="hover:text-primary"
+            href={"https://www.linkedin.com/in/david-beckham-278644227"}
+            target="_blank"
+          >
+            David Beckham
+          </Link>
+        </p>
       </div>
     </div>
   )
