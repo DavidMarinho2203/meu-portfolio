@@ -18,7 +18,7 @@ export default function Home() {
   const otherProjeto = Projetos.filter((projeto) => !projeto.emphasis)
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col px-4">
       <div className="container mx-auto flex flex-col items-center justify-center gap-4">
         {/* Perfil */}
         <div className="border-primary/30 flex w-full flex-col items-center justify-center gap-4 border-b-1 pt-10 md:w-3xl">
