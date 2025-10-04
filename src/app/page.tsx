@@ -1,16 +1,17 @@
 import { ExternalLink, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import Projetos from "@/db/data/Projetos"
+import skills from "@/db/data/Skills"
+
+import { Avatar, AvatarFallback, AvatarImage } from "./_components/ui/avatar"
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import Projetos from "@/db/data/Projetos"
-import skills from "@/db/data/Skills"
+} from "./_components/ui/card"
 
 export default function Home() {
   const emphasisProjeto = Projetos.filter((projeto) => projeto.emphasis)
