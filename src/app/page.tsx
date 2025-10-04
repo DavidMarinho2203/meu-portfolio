@@ -42,19 +42,19 @@ export default function Home() {
                   {
                     id: 1,
                     icon: Github,
-                    link: "",
+                    link: "https://github.com/DavidMarinho2203",
                     name: "Github",
                   },
                   {
                     id: 2,
                     icon: Linkedin,
-                    link: "",
+                    link: "https://www.linkedin.com/in/david-beckham-278644227",
                     name: "Linkedin",
                   },
                   {
                     id: 3,
                     icon: Mail,
-                    link: "",
+                    link: "mailto:davidbeckhampm.dev@gmail.com",
                     name: "Email",
                   },
                 ].map((item) => (
@@ -63,6 +63,7 @@ export default function Home() {
                     className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
                     key={item.id}
                     title={item.name}
+                    target="_blank"
                   >
                     <item.icon className="h-5 w-5" />
                     <p className="text-sm">{item.name}</p>
