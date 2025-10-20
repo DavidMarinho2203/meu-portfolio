@@ -17,6 +17,12 @@ export default function Home() {
   const emphasisProjeto = Projetos.filter((projeto) => projeto.emphasis)
   const otherProjeto = Projetos.filter((projeto) => !projeto.emphasis)
 
+  const whatsappNumber = "5583991813692"
+  const whatsappMessage = encodeURIComponent(
+    "Olá, David Beckham! Vim pelo seu portfólio.",
+  )
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
+
   return (
     <div className="flex min-h-screen flex-col px-4">
       <div className="container mx-auto flex flex-col items-center justify-center gap-4">
@@ -71,6 +77,13 @@ export default function Home() {
                 ))}
               </ul>
             </nav>
+
+            <Link
+              href={whatsappLink}
+              className="text-muted-foreground hover:bg-primary/80 cursor-pointer rounded-sm border-1 bg-transparent px-3 py-1 text-sm font-medium transition-colors hover:text-white"
+            >
+              Entrar em Contato
+            </Link>
           </div>
         </div>
         {/* Sobre mim */}
