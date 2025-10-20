@@ -1,17 +1,11 @@
-import { ExternalLink, Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 
 import Projetos from "@/db/data/Projetos"
 import skills from "@/db/data/Skills"
 
+import PersonalizadoCard from "./_components/personalizado-card"
 import { Avatar, AvatarFallback, AvatarImage } from "./_components/ui/avatar"
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "./_components/ui/card"
 
 export default function Home() {
   const emphasisProjeto = Projetos.filter((projeto) => projeto.emphasis)
@@ -80,6 +74,8 @@ export default function Home() {
 
             <Link
               href={whatsappLink}
+              target="_blank"
+              title="Ir para o whatsApp de David Marinho"
               className="text-muted-foreground hover:bg-primary/80 cursor-pointer rounded-sm border-1 bg-transparent px-3 py-1 text-sm font-medium transition-colors hover:text-white"
             >
               Entrar em Contato
@@ -121,38 +117,7 @@ export default function Home() {
           </h2>
           <div className="flex flex-col gap-4">
             {emphasisProjeto.map((skill) => (
-              <Card
-                key={skill.id}
-                className="hover:border-primary w-full border-1 transition-colors duration-200 ease-in-out"
-              >
-                <CardHeader>
-                  <CardTitle className="text-primary">{skill.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>{skill.description}</p>
-                </CardContent>
-                <CardFooter className="flex gap-4">
-                  <Link
-                    href={skill.github}
-                    target="_blank"
-                    className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
-                  >
-                    <Github className="h-5 w-5" />
-                    <p className="text-sm">Código Fonte</p>
-                  </Link>
-
-                  {skill.site && (
-                    <Link
-                      href={skill.site}
-                      target="_blank"
-                      className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
-                    >
-                      <ExternalLink className="h-5 w-5" />
-                      <p className="text-sm">Preview</p>
-                    </Link>
-                  )}
-                </CardFooter>
-              </Card>
+              <PersonalizadoCard skill={skill} key={skill.id} />
             ))}
           </div>
         </div>
@@ -163,38 +128,7 @@ export default function Home() {
             Outros Projetos
           </h2>
           {otherProjeto.map((skill) => (
-            <Card
-              key={skill.id}
-              className="hover:border-primary w-full border-1 transition-colors duration-200 ease-in-out"
-            >
-              <CardHeader>
-                <CardTitle className="text-primary">{skill.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p>{skill.description}</p>
-              </CardContent>
-              <CardFooter className="flex gap-4">
-                <Link
-                  href={skill.github}
-                  target="_blank"
-                  className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
-                >
-                  <Github className="h-5 w-5" />
-                  <p className="text-sm">Código Fonte</p>
-                </Link>
-
-                {skill.site && (
-                  <Link
-                    href={skill.site}
-                    target="_blank"
-                    className="hover:text-primary flex cursor-pointer items-center justify-center gap-2 transition-colors"
-                  >
-                    <ExternalLink className="h-5 w-5" />
-                    <p className="text-sm">Preview</p>
-                  </Link>
-                )}
-              </CardFooter>
-            </Card>
+            <PersonalizadoCard skill={skill} key={skill.id} />
           ))}
         </div>
 
@@ -205,6 +139,7 @@ export default function Home() {
             className="hover:text-primary"
             href={"https://www.linkedin.com/in/david-beckham-278644227"}
             target="_blank"
+            title="Ir para o linkedin de David Beckham"
           >
             David Beckham
           </Link>
