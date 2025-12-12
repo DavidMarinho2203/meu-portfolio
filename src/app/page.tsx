@@ -116,9 +116,11 @@ export default function Home() {
             Em Destaque
           </h2>
           <div className="flex flex-col gap-4">
-            {emphasisProjeto.map((skill) => (
-              <PersonalizadoCard skill={skill} key={skill.id} />
-            ))}
+            {emphasisProjeto
+              .sort((a, b) => b.id - a.id)
+              .map((skill) => (
+                <PersonalizadoCard skill={skill} key={skill.id} />
+              ))}
           </div>
         </div>
 
